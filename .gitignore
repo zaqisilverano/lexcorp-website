@@ -1,0 +1,15 @@
+# Node Package Manager
+/node_modules
+npm-debug.log
+/bower_components
+.tmp/*
+
+# main css
+assets/css/main.css
+assets/css/main.css.map
+
+#Others
+.DS_Store
+/.sass-cache/
+.htaccess
+.htaccess-h5bp

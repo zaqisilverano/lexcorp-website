@@ -1,0 +1,151 @@
+.news-detail-page{
+	header .navbar .navbar-nav li a{
+		color: $white;
+		@media screen and (max-width: 991px){
+			color: $colorFont;
+		}
+		&:before{
+			display: none;
+		}
+		&:hover{
+			color: $mainColor;
+		}
+	}
+	header .navbar .navbar-toggle .icon-bar{
+		background: $white;
+	}
+	.title-page.news-title{
+		background-size: cover !important;
+		background-repeat: no-repeat !important;
+		background-position: center center !important;
+		height: 480px;
+		.title-page-text{
+			padding-top: 160px;
+			.date{
+				text-transform: uppercase;
+				color: $white;
+				font-size: 15px;
+			}
+			h1{
+				width: 600px;
+			    margin-left: auto;
+			    margin-right: auto;
+			    color: $white;
+			    @media screen and (max-width: 767px){
+					width: 90%;
+					font-size: 30px;
+				}
+			}
+			.scroll{
+				bottom: 10px;
+				color: $white;
+			}
+		}
+	}
+}
+
+.news-section{
+	padding: 100px 0;
+	.section-title.small{		
+		@media screen and (max-width: 767px){
+			text-align: center;
+			.line-heading{
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+		h2{
+			font-size: 16px;
+		}
+	}
+	.share-social{
+		overflow: hidden;
+		@media screen and (max-width: 767px){
+			text-align: center;
+			margin-bottom: 30px;
+		}
+		.social-icon{
+			width: 38px;
+			height: 38px;
+			border-radius: 50%;
+			background: $grey;
+			overflow: hidden;
+			text-align: center;
+			padding: 10px 0;
+			display: inline-block;
+			cursor: pointer;
+			@include transition(all, 0.3s, ease);
+			color: $colorFont;
+			&:hover{
+				background: $colorFont;
+				color: $white;
+			}
+			& + .social-icon{
+				margin-left: 10px;
+			}
+		}
+	}
+	.news-desc{
+		p{
+			font-size: 16px;
+			line-height: 1.8;
+			font-family: 'roboto_light';
+			margin-bottom: 15px;
+		}
+		img{
+			max-width: 100%;
+		}
+	}
+}
+.comment-section{
+	background: $greyLight;
+	padding: 60px 0;
+	.comment-title{
+		margin-bottom: 30px;
+		font-family: 'roboto_medium';
+	}
+	.comment-wrapper{
+		position: relative;
+		padding-left: 95px;
+		border-bottom: 1px solid $greyBorder2;
+		padding-bottom: 30px;
+		margin-bottom: 40px;
+		&.reply{
+			margin-left: 60px;
+		}
+		.comment-people{
+			width: 68px;
+			height: 68px;
+			border-radius: 50%;
+			overflow: hidden;
+			position: absolute;
+			left: 0;
+			img{
+				max-width: 100%;
+			}
+		}
+	}
+	.comment-content{
+		h4{
+			font-size: 18px;
+			margin-bottom: 3px;
+		}
+		.date{
+			color: $colorFontLighter;
+			font-size: 12px;
+			display: block;
+			font-style: italic;
+			margin-bottom: 15px;
+			opacity: 0.8;
+		}
+		p{
+			color: $colorFontLighter;
+			font-size: 15px;
+			line-height: 1.6;
+		}
+	}
+	.comment-area{
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+}

@@ -1,0 +1,28 @@
+/* VENDORS COMPONENTS */
+@import "vendors/bootstrap/_bootstrap";
+
+/* BASE */
+@import "helpers/variables.scss";
+@import "base/base.scss";
+
+/* HELPERS AND RESETTER */
+@import "helpers/reset.scss";
+@import "helpers/mixins.scss";
+@import "helpers/vendor.scss";
+
+/* COMPONENT */
+@import "component/component.scss";
+
+/* LAYOUT */
+@import "layout/header.scss";
+@import "layout/main-content.scss";
+
+/* PAGE */
+@import "pages/home.scss";
+@import "pages/about.scss";
+@import "pages/services.scss";
+@import "pages/management.scss";
+@import "pages/contact.scss";
+@import "pages/news-detail.scss";
+@import "pages/page404.scss";
+@import "pages/maintenance.scss";

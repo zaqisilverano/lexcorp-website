@@ -1,0 +1,153 @@
+.service-content{
+	padding: 100px 0;
+	.service-item{
+		display: block;
+		position: relative;
+		float: left;
+		width: 100%;
+		@media screen and (max-width: 991px){
+			text-align: center;
+			.section-title .line-heading{
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+		.section-title{
+			margin-top: 60px;
+		}
+		p{
+			font-family: 'roboto_light';
+			line-height: 1.8;
+			font-size: 18px;
+		}
+		.col-md-5{
+			overflow: hidden;
+		}
+		@media screen and (max-width: 767px){
+			.section-title{
+				h2{
+					font-size: 28px;
+				}
+			}
+			p{
+				font-size: 16px;
+			}
+		}
+		.service-icon{
+			width: 330px;
+			height: 330px;
+			border-radius: 50%;
+			padding: 40px;
+			position: relative;
+			background: $visionRed;			
+			.service-icon-content{
+				width: 250px;
+				height: 250px;
+				border-radius: 50%;
+				box-shadow: 0 0 0 40px rgba(255,255,255,0.35);
+				background: url('../../assets/images/border-dotted.png') no-repeat;
+				background-position: center center;
+				img{
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					transform: translate(-50%, -50%);
+				}
+			}
+			@media screen and (max-width: 767px){
+				width: 200px;
+				height: 200px;
+				padding: 25px;
+				.service-icon-content{
+					background: none;
+					box-shadow: 0 0 0 25px rgba(255,255,255,0.35);
+					width: 150px;
+					height: 150px;
+					img{
+						width: 80px;
+					}
+				}
+			}
+		}
+		& + .service-item{
+			margin-top: 160px;
+			@media screen and (max-width: 991px){
+				margin-top: 60px;
+			}
+		}
+		&:nth-child(even){
+			&:before{
+				width: 643px;
+				height: 158px;
+				background: url('../../assets/images/service-line.png') no-repeat;
+				content: '';
+				position: absolute;
+				top: -158px;
+    			left: 170px;
+    			@media screen and (max-width: 991px){
+    				display: none;
+    			}
+			}
+			.service-icon{
+				float: left;
+				@media screen and (max-width: 991px){
+					margin: 0 auto;
+					float: none;
+				}
+			}
+		}
+		&:nth-child(odd){
+			&:before{
+				width: 643px;
+				height: 158px;
+				background: url('../../assets/images/service-line-rev.png') no-repeat;
+				content: '';
+				position: absolute;
+				top: -158px;
+    			right: 170px;
+    			@media screen and (max-width: 991px){
+    				display: none;
+    			}
+			}
+			.service-icon{
+				float: right;
+				@media screen and (max-width: 991px){
+					margin: 0 auto;
+					float: none;
+				}
+			}
+			.col-md-5{
+				float: right;
+				@media screen and (max-width: 991px){
+					float: none;
+				}
+			}
+		}
+		&:first-child{
+			&:before{
+				display:none;
+			}
+		}
+	}
+}
+.footer-client.services{
+	padding: 60px 0;
+	p{
+		float: left;
+		font-family: 'roboto_light';
+		line-height: 1.8;
+		font-size: 18px;
+		text-align: left;
+		@media screen and (max-width: 991px){
+			float:none;
+			text-align: center;
+		}
+	}
+	@media screen and (max-width: 991px){
+		img{
+			float: none !important;
+			margin: 0 auto;
+			margin-top: 15px;
+		}
+	}
+}

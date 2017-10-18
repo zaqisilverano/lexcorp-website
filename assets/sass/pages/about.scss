@@ -1,0 +1,196 @@
+.about-section{
+	padding: 100px 0 0;	
+	z-index: 9;
+	.section-title{
+		p{
+			font-size: 24px;
+			font-family: 'roboto_light';
+			line-height: 1.5;
+			@media screen and (max-width: 991px){
+				font-size: 20px;
+			}
+		}
+	}
+	.vision-wrapper{
+		.about-vision{
+			width: 250px;
+			height: 250px;
+			border-radius: 50%;
+			margin: 0 auto;
+			padding: 30px;
+			position: relative;
+			margin-top: 75px;
+			@media screen and (max-width: 991px){
+				width: 200px;
+				height: 200px;
+				padding: 20px;
+			}
+			@media screen and (max-width: 767px){
+				margin-top: 30px;
+			}
+			.vision-content{
+				box-shadow: 0 0 0 30px rgba(255,255,255,0.35);
+				width: 190px;
+				height: 190px;
+				border-radius: 50%;
+				@media screen and (max-width: 991px){
+					width: 160px;
+					height: 160px;
+					box-shadow: 0 0 0 20px rgba(255,255,255,0.35);
+					background: none !important;
+				}
+				h4{
+					margin:0;
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					transform: translate(-50%, -50%);
+				}
+			}
+			&.red{
+				background: $visionRed;
+				.vision-content{
+					background: url('../../assets/images/border-dotted-small-red.png') no-repeat;
+					background-position: center center;
+				}
+				h4{
+					color: $visionRedDark;
+				}
+			}
+			&.blue{
+				background: $visionBlue;
+				.vision-content{
+					background: url('../../assets/images/border-dotted-small-blue.png') no-repeat;
+					background-position: center center;
+				}
+				h4{
+					color: $visionBlueDark;
+				}
+			}
+			&.grey{
+				background: $visionGrey;
+				.vision-content{
+					background: url('../../assets/images/border-dotted-small-grey.png') no-repeat;
+					background-position: center center;
+				}
+				h4{
+					color: $colorFont;
+				}
+			}
+		}
+		&:first-child{
+			.about-vision{
+				&:before{
+					background: url('../../assets/images/vision-arrow-bot.png');
+					position: absolute;
+					bottom: -40px;
+    				right: -120px;
+					content: '';
+					width: 171px;
+					height: 65px;
+					@media screen and (max-width: 991px){
+						display: none;
+					}
+				}
+			}
+		}
+		&:last-child{
+			.about-vision{
+				&:before{
+					background: url('../../assets/images/vision-arrow-top.png');
+					position: absolute;
+					top: -40px;
+    				left: -130px;
+					content: '';
+					width: 171px;
+					height: 65px;
+					@media screen and (max-width: 991px){
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	.our-vision{
+		background: $mainColor;
+		color: $white;
+		padding: 60px 80px;
+		margin-top: 120px;	
+		margin-bottom: -120px;
+		position: relative;
+		z-index: 99;
+		@media screen and (max-width: 991px){
+			padding: 40px 60px;
+		}
+		@media screen and (max-width: 767px){
+			margin-top: 60px;
+			padding: 20px 30px;
+		}	
+		p{
+			font-size: 18px;
+			line-height: 1.5;
+			text-align: center;
+			margin-top: 25px;
+			font-family: 'roboto_light';
+			@media screen and (max-width: 767px){
+				font-size: 16px;
+			}
+		}
+	}
+}
+.mission-content{
+	padding: 170px 0 100px 0;
+	background: $greyLight;
+	.section-title{
+		margin-bottom: 40px;
+		img{
+			margin-bottom: 40px;
+		}
+	}
+	.mission-item{
+		position: relative;
+		padding-left: 62px;
+		@media screen and (max-width: 991px){
+			margin-bottom: 15px;
+		}
+		span{
+			width: 45px;
+			height: 45px;
+			border-radius: 50%;
+			background: $visionRed;
+			color: $visionRedDark;
+			padding: 12px; 
+			text-align: center;
+			font-family: 'roboto_medium';
+			display: block;
+			position: absolute;
+			left: 0;
+		}
+		p{
+			font-family: 'roboto_light';
+			font-size: 18px;
+			line-height: 1.5;
+			@media screen and (max-width: 767px){
+				font-size: 16px;
+			}
+		}
+	}
+}
+.about-home.bottom{
+	height: auto;
+	padding: 58px;
+	overflow: hidden;
+	background: url('../../assets/images/about-bottom-bg.jpg');
+	background-size: cover !important;
+	@media screen and (max-width: 767px){
+		padding: 40px 0;
+	}
+	.container .about-content{
+		position: relative;
+		float: right;
+		@media screen and (max-width: 991px){
+		    float: none;
+	    	margin: 0 auto;
+		}
+	}
+}
